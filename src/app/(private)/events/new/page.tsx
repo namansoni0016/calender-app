@@ -1,4 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { EventForm } from "@/components/forms/EventForm";
 
 export default function NewEventPage() {
     return (
@@ -7,7 +8,7 @@ export default function NewEventPage() {
                 <CardTitle>New Event</CardTitle>
             </CardHeader>
             <CardContent>
-                content
+                <EventForm/>
             </CardContent>
         </Card>
     )
