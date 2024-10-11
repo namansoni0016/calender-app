@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { CalendarPlus } from "lucide-react";
+import { CalendarPlus, CalendarRange } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { db } from "@/drizzle/db";
 import { auth } from "@clerk/nextjs/server";
-import { CalendarRange } from "lucide-react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { formatEventDescription } from "@/lib/formatters";
 import { CopyEventButton } from "@/components/CopyEventButton";
