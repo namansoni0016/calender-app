@@ -6,6 +6,9 @@ import { getValidTimesFromSchedule } from "@/lib/getValidTimesFromSchedule";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { MeetingForm } from "@/components/forms/MeetingForm";
+
+export const revalidate = 0;
 
 export default async function BookEventPage({ params: { clerkUserId, eventId }}: { params: { clerkUserId: string, eventId: string }}) {
     const event = await db.query.EventTable.findFirst({

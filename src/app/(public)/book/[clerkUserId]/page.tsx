@@ -1,4 +1,3 @@
-import { CopyEventButton } from "@/components/CopyEventButton";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { db } from "@/drizzle/db"
@@ -6,6 +5,8 @@ import { formatEventDescription } from "@/lib/formatters";
 import { clerkClient } from "@clerk/nextjs/server";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+
+export const revalidate = 0;
 
 export default async function BookingPage({ params: {
     clerkUserId
